@@ -12,7 +12,7 @@ void	ft_print_numbers(int n1, int n2)
 	ft_putchar(' ');
 	ft_putchar((n2 / 10) + '0');
 	ft_putchar((n2 % 10) + '0');
-	if (n1 <= 98)
+	S
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
