@@ -15,7 +15,6 @@ void	ft_print_comb(void)
 	v[0] = '0';
 	v[3] = ',';
 	v[4] = ' ';
-
 	while (v[0] <= '7')
 	{
 		v[1] = v[0] + 1;
@@ -31,9 +30,4 @@ void	ft_print_comb(void)
 		}
 		v[0]++;
 	}
-}
-
-int	main()
-{
-	ft_print_comb();
 }
