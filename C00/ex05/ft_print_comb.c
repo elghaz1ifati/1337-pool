@@ -1,42 +1,39 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	write_n(char v[])
 {
-	write(1, &c, 1);
-}
-
-void	ft_print_numbers(char n1, char n2, char n3)
-{
-	ft_putchar(n1);
-	ft_putchar(n2);
-	ft_putchar(n3);
-	if (n1 < '7')
-	{
-		ft_putchar(',');
-		ft_putchar(' ');
-	}
+	if (v[0] == '7' && v[1] == '8' && v[2] == '9')
+		write(1, v, 3);
+	else
+		write(1, v, 5);
 }
 
 void	ft_print_comb(void)
 {
-	char	c1;
-	char	c2;
-	char	c3;
+	char	v[5];
 
-	c1 = '0';
-	while (c1 <= '7')
+	v[0] = '0';
+	v[3] = ',';
+	v[4] = ' ';
+
+	while (v[0] <= '7')
 	{
-		c2 = c1 + 1;
-		while (c2 <= '8')
+		v[1] = v[0] + 1;
+		while (v[1] <= '8')
 		{
-			c3 = c2 + 1;
-			while (c3 <= '9')
+			v[2] = v[1] + 1;
+			while (v[2] <= '9')
 			{
-				ft_print_numbers(c1, c2, c3);
-				c3++;
+				write_n(v);
+				v[2]++;
 			}
-			c2++;
+			v[1]++;
 		}
-		c1++;
+		v[0]++;
 	}
+}
+
+int	main()
+{
+	ft_print_comb();
 }
