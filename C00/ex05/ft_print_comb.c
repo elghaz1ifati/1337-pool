@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	write_n(char v[])
+void	comb(char v[])
 {
 	if (v[0] == '7' && v[1] == '8' && v[2] == '9')
 		write(1, v, 3);
@@ -10,24 +10,30 @@ void	write_n(char v[])
 
 void	ft_print_comb(void)
 {
-	char	v[5];
+	char	c[5];
 
-	v[0] = '0';
-	v[3] = ',';
-	v[4] = ' ';
-	while (v[0] <= '7')
+	c[0] = '0';
+	c[3] = ',';
+	c[4] = ' ';
+	while (c[0] <= '7')
 	{
-		v[1] = v[0] + 1;
-		while (v[1] <= '8')
+		c[1] = c[0] + 1;
+		while (c[1] <= '8')
 		{
-			v[2] = v[1] + 1;
-			while (v[2] <= '9')
+			c[2] = c[1] + 1;
+			while (c[2] <= '9')
 			{
-				write_n(v);
-				v[2]++;
+				comb(c);
+				c[2]++;
 			}
-			v[1]++;
+			c[1]++;
 		}
-		v[0]++;
+		c[0]++;
 	}
 }
+/*
+int main ()
+{
+	ft_print_comb();
+}
+*/
