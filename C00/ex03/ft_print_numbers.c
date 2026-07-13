@@ -11,7 +11,9 @@ void	ft_print_numbers(void)
 		n++ ;
 	}
 }
+/*
 int	main ()
 {
 	ft_print_numbers();
 }
+*/
