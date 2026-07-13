@@ -13,7 +13,7 @@ void	ft_putnbr(int nb)
 		ft_putchar('2');
 		ft_putnbr(147483648);
 	}
-	if (nb < 0)
+	else if (nb < 0)
 	{
 		ft_putchar('-');
 		nb = -nb;
@@ -27,3 +27,19 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + 48);
 }
+/*
+int	main()
+{
+	ft_putnbr(-2147483648);
+	ft_putchar('min value : \n');
+	ft_putnbr(560);
+	ft_putchar('\n');
+	ft_putnbr(-23);
+	ft_putchar('\n');
+	ft_putnbr(-7);
+	ft_putchar('\n');
+	ft_putnbr(0);
+	ft_putchar('\n');
+	ft_putnbr(4);
+}
+*/
