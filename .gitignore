@@ -1,0 +1,5 @@
+# Ignore .swp.c
+*.swp.c
+
+# Ignore token file
+github-token
