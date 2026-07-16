@@ -1,5 +1,6 @@
-# Ignore .swp.c
-*.swp.c
-
+# Ignore .c.swp
+*.c.swp
+#Ignire a.out
+*a.out
 # Ignore token file
 github-token
