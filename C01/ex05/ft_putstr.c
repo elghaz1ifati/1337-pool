@@ -11,8 +11,9 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
-
+/*
 int	main()
 {
 	ft_putstr("hello world");
 }
+*/
