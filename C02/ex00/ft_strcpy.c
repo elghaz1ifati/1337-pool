@@ -25,5 +25,6 @@ int	main()
 	printf("Des : %s\n", dest);
 	printf("Adrss of dest : %p\n", (void*)dest);
 }
-// n.b: (void*) strips the type to match what *p expects, avoiding a -Werror crash
 */
+// n.b: (void*) strips the type to match what *p expects, 
+// avoiding a -Werror crash
