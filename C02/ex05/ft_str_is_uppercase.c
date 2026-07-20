@@ -14,10 +14,11 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
-
+/*
 int	main()
 {
 	printf("%d\n", ft_str_is_uppercase("HELLO"));
 	printf("%d\n",ft_str_is_uppercase("hello"));
 	printf("%d", ft_str_is_uppercase(""));
 }
+*/
