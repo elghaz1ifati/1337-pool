@@ -18,14 +18,12 @@ int	main()
 {
 	char dest[10];
 	char *src = "hello";
-	char *res;
 
-	res = ft_strcpy(dest, src);
+	ft_strcpy(dest, src);
 	printf("Src : %s\n", src);
 	printf("Adrss of src : %p\n", (void*)src);
 	printf("Des : %s\n", dest);
 	printf("Adrss of dest : %p\n", (void*)dest);
-	printf("Res : %s\n", res);
-	printf("Adrss of res : %p", (void*)res);
 }
+// n.b: (void*) strips the type to match what *p expects, avoiding a -Werror crash
 */
