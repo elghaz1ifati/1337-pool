@@ -3,4 +3,4 @@
 #Ignire a.out
 *a.out
 # Ignore token file
-github-token
+github_token
