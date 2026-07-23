@@ -3,11 +3,11 @@
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	n;
+	int	nb;
 	int	s;
 
 	i = 0;
-	n = 0;
+	nb = 0;
 	s = 1;
 	while (str[i] == ' ' || str[i] >= '\t' && str[i] <= '\r')
 		i++;
@@ -19,14 +19,18 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		n = n * 10 + (str[i] - '0');
+		nb = nb * 10 + (str[i] - '0');
 		i++;
 	}
-	return (n * s);
+	return (nb * s);
 }
 /*
 int	main()
 {
 	printf("%d", ft_atoi("	---+--+1234ab567"));
 }
+:wq
+
+
+
 */
